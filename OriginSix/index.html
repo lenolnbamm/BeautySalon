@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OriginSix</title>
-
+    <title>BeautySalon</title>
+    <link rel="stylesheet" href="assets/fonts/style.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +15,7 @@
   </head>
   <body>
     <header id="header">
-      <nav class="container show">
+      <nav class="container">
         <a class="logo" href="#">beauty<span>salon</span>.</a>
         <div class="menu">
           <ul class="grid">
@@ -26,8 +26,8 @@
             <li><a class="title" href="#contact">Contato</a></li>
           </ul>
         </div>
-        <div class="open">...</div>
-        <div class="close">X</div>
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
       </nav>
     </header>
 
@@ -53,24 +53,108 @@
 
       <div class="divider-1"></div>
       <section id="about" class="section">
-        <div class="container">Sobre</div>
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="./assets/tres-mulheres-sorrindo.png"
+              alt="Três mulheres sorrindo com tesouras e escovas de pentear o cabelo."
+            />
+          </div>
+          <div class="text"></div>
+          <h2 class="title">Sobre nós</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dolore
+            sit non libero sint natus ipsa voluptate magni tempore. Nam, ipsa?
+            Temporibus porro odio atque qui cupiditate pariatur vel. Dicta.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
+            esse asperiores repellat quisquam fugit, quibusdam, deserunt atque
+            quo animi aspernatur expedita. Voluptatibus voluptatem obcaecati quo
+            nobis animi, id facere temporibus.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
+            tenetur repellat sed quod cupiditate at laudantium laboriosam dolore
+            officiis molestias doloribus, rem fugiat voluptatibus quas,
+            architecto ipsum eveniet facilis odit!
+          </p>
+        </div>
       </section>
 
-      <div class="divider-1"></div>
+      <div class="divider-2"></div>
       <section id="services" class="section">
-        <div class="container">Serviços</div>
+        <div class="container grid">
+          <header>
+            <h2 class="title">Serviços</h2>
+            <p>
+              Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já
+              conquistou clientes de inúmeros países com seus tratamentos
+              exclusivos e totalmente naturais
+            </p>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <i class="icon-woman-hair"></i>
+              <h3 class="title">Terapia capilar</h3>
+              <p>
+                Terapia completa para couro cabeludo e fios, protegendo todos os
+                tipos de cabelos, inclusive os longos e finos.
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-trim"></i>
+              <h3 class="title">Cortes</h3>
+              <p>
+                A nossa equipe é repleta de profissionais renomados, famosos por
+                lançarem tendências com cortes diferenciados e clássicos.
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-cosmetic"></i>
+              <h3 class="title">Tratamentos</h3>
+              <p>
+                O beautysalon conta com diversos tratamentos naturais e
+                totalmente veganos, para qualquer tipo de cabelo.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <div class="divider-1"></div>
       <section id="testemonials" class="section">
-        <div class="container">Depoimentos</div>
+        <div class="container grid">
+          <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+          <p>
+            Eu sou cliente do Beautysalon há 5 anos e não troco por nada!
+            Certamente meu cabelo mudou muito depois que comecei a tratar
+            somente com produtos naturais e veganos. São profissionais incríveis
+            e qualificados.
+          </p>
+          <p>
+            Minha mãe frequenta o salão há anos e me levou um dia para conhecer.
+            Minha experiência foi incrível, eu continuo fazendo o a terapia
+            capilar e isso salvou o meu cabelo. Adoro todos os profissionais do
+            Beautysalon.
+          </p>
+        </div>
       </section>
 
       <div class="divider-1"></div>
       <section id="contact" class="section">
-        <div class="container">Contato</div>
+        <h2 class="title">Entre em contato com a gente!</h2>
+        <p>
+          Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir
+          suas críticas e sugestões.
+        </p>
+        <a class="button" href="#contact">Entrar em contato.</a>
       </section>
     </main>
     <footer></footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
