@@ -63,6 +63,8 @@ ScrollReveal({
 
 /*=======================  BUTTON SCROLL TO TOP  =======================*/
 function showBackToTopButtonOnScroll() {
+  const backToTopButton = document.getElementById('backToTopButton')
+
   scrollY > 0
     ? backToTopButton.classList.add('show')
     : backToTopButton.classList.remove('show')
