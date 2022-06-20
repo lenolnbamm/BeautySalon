@@ -1,3 +1,10 @@
+window.addEventListener('scroll', onScroll)
+onScroll()
+
+function onScroll() {
+  showBackToTopButtonOnScroll()
+}
+
 /*=======================  TOGGLE NAVIGATION  =======================*/
 
 const nav = document.querySelector('#header nav')
@@ -53,3 +60,10 @@ ScrollReveal({
 #services, #services header, #services header p, #services .card,
 #testimonials header, #testimonials .testimonials,
 #contact, #contact .text, #contact .button, #contact .links`)
+
+/*=======================  BUTTON SCROLL TO TOP  =======================*/
+function showBackToTopButtonOnScroll() {
+  scrollY > 0
+    ? backToTopButton.classList.add('show')
+    : backToTopButton.classList.remove('show')
+}

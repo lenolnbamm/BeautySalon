@@ -481,3 +481,23 @@ footer ul li i {
 footer ul li i a {
   text-decoration: none;
 }
+
+/*=======================  BUTTON SCROLL TO TOP  =======================*/
+
+#backToTopButton {
+  position: fixed;
+  bottom: 1rem;
+  right: 2.5rem;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(100%);
+  transition: 200ms;
+}
+
+#backToTopButton.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0);
+}
